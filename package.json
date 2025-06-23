@@ -1,16 +1,11 @@
 {
   "name": "ttp-debugging-exercise",
   "version": "1.0.0",
-  "homepage": "https://baryaakov555.github.io/[your-repo-name]/",
   "main": "index.js",
   "scripts": {
     "start": "webpack --mode production",
     "start-dev": "webpack serve --mode development --open",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
-
-
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
