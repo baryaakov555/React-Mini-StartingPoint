@@ -1,11 +1,16 @@
 {
   "name": "ttp-debugging-exercise",
   "version": "1.0.0",
+  "homepage": "https://baryaakov555.github.io/[your-repo-name]/",
   "main": "index.js",
   "scripts": {
     "start": "webpack --mode production",
     "start-dev": "webpack serve --mode development --open",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+
+
   },
   "keywords": [],
   "author": "",
@@ -15,6 +20,7 @@
     "@babel/core": "^7.27.4",
     "@babel/preset-react": "^7.27.1",
     "babel-loader": "^10.0.0",
+    "gh-pages": "^6.3.0",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
     "webpack": "^5.99.9",
