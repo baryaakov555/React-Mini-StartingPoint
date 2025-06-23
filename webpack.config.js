@@ -4,7 +4,7 @@ module.exports = {
   mode: "development",
   entry: "./src/app.jsx",
   output: {
-    path: path.resolve(__dirname, "public"),
+    path: path.resolve(__dirname, "docs"),
     filename: "main.js",
   },
   module: {
@@ -30,7 +30,7 @@ module.exports = {
   },
   devServer: {
     static: {
-      directory: path.join(__dirname, "public"),
+      directory: path.join(__dirname, "docs"),
     },
     compress: true,
     port: 3000,
